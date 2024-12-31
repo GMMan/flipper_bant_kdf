@@ -1,0 +1,9 @@
+App(
+    appid="bant_parser",
+    apptype=FlipperAppType.PLUGIN,
+    entry_point="bant_plugin_ep",
+    targets=["f7"],
+    requires=["nfc"],
+    fap_libs=["mbedtls"],
+    sources=["src/bant.c", "src/bant_crypt.c"],
+)
